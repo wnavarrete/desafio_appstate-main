@@ -1,12 +1,20 @@
 export const ORDERS = [
   {
     id: 1,
-    title: 'Santiago del estero',
-    color: '#FFD151',
+    address: 'Santiago del estero 1234',
+    client: 'Juan Perez',
+    color: '#b8c0ff',
   },
   {
     id: 2,
-    title: 'Velez Sarfield',
-    color: '#FFDDA1',
+    address: 'Velez Sarfield 45634',
+    client: 'Oscar Rocha',
+    color: '#bbd0ff',
+  },
+  {
+    id: 3,
+    address: 'Callao 1011',
+    client: 'Codere',
+    color: '#b8c0ff',
   },
 ]

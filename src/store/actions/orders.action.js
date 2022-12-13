@@ -7,9 +7,6 @@ export const selectOrder = (id) =>({
     categoryId: id,
 });
 
-
-
-// import { URL_BASE } from '../../constants/firebase';
 // import { ordersTypes } from '../types';
 
 // const { GET_ORDERS, DELETE_ORDER } = ordersTypes;

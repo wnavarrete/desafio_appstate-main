@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     marginHorizontal: 20,
     marginVertical: 10,
-    height: 160,
+    height: 80,
   },
   contentContainer: {
     flex: 1,
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     },
     shadowOpacity: 0.2,
     shadowRadius: 1.41,
-    elevation: 2,
+    elevation: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 10,
@@ -28,6 +28,11 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontFamily: 'Lato-Bold',
+    // color: COLORS.text,
+  },
+  client: {
+    fontSize: 14,
+    fontFamily: 'Lato-Regular',
     // color: COLORS.text,
   },
 });

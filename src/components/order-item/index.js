@@ -10,7 +10,8 @@ const OrderItem = ({ item, onSelected }) => {
         style={{ ...styles.contentContainer, backgroundColor: item.color }}
         onPress={() => onSelected(item)}>
         <View>
-          <Text style={styles.title}>{item.title}</Text>
+          <Text style={styles.title}>{item.address}</Text>
+          <Text style={styles.client}>{item.client}</Text>
         </View>
       </TouchableOpacity>
     </View>
