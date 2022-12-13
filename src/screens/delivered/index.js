@@ -4,13 +4,16 @@ import { Card } from "../../components";
 import COLORS from "../../constants/colors";
 import { styles } from './styles';
 import { OrderItem } from '../../components';
-import { CATEGORIES } from '../../constants/data/index';
+import { useSelector } from "react-redux";
+// import { CATEGORIES } from '../../constants/data/index';
 import { FlatList, SafeAreaView } from 'react-native';
 
 
 
 const Delivered = ({navigation}) => {
   
+    const orders = useSelector((state) => state.order.orders);
+
     const onSelected = (item) => {
         console.warn('onSelected', item);
       };
@@ -22,14 +25,14 @@ const Delivered = ({navigation}) => {
 
 <SafeAreaView style={styles.container}>
        <FlatList
-         data={CATEGORIES}
+         data={orders}
          renderItem={renderItem}
          keyExtractor={(item) => item.id.toString()}
          style={styles.containerList}
        />
      </SafeAreaView>
 
-            {/* <Card style={styles.content}>
+            <Card style={styles.content}>
                 <Text style={styles.title} color={COLORS.primary}>Delivered Screen</Text>
                 <View style={styles.containerButton}>
                     <Button
@@ -38,7 +41,7 @@ const Delivered = ({navigation}) => {
                         color={COLORS.primary}
                     />
                 </View>
-            </Card> */}
+            </Card>
         </View>
     )
 }

@@ -1,12 +1,12 @@
-export const CATEGORIES = [
+export const ORDERS = [
   {
     id: 1,
-    title: 'Harinas Puras',
+    title: 'Santiago del estero',
     color: '#FFD151',
   },
   {
     id: 2,
-    title: 'Harinas Integrales',
+    title: 'Velez Sarfield',
     color: '#FFDDA1',
   },
 ]
