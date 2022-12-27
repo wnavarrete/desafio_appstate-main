@@ -3,7 +3,7 @@ import { View, Text, Button } from "react-native";
 import { Card } from "../../components";
 import COLORS from "../../constants/colors";
 import { styles } from "./styles";
-import { OrderItem } from "../../components";
+import { OrderItem, ImageSelector } from "../../components";
 import { useSelector } from "react-redux";
 import { FlatList, SafeAreaView } from "react-native";
 

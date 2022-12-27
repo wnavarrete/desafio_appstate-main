@@ -9,7 +9,7 @@ import {
   ScrollView,
 } from "react-native";
 import { styles } from "./styles";
-import { Card } from "../../components";
+import { Card, ImageSelector} from "../../components";
 import COLORS from "../../constants/colors";
 
 const Main = ({ navigation }) => {
@@ -24,16 +24,9 @@ const Main = ({ navigation }) => {
           <Card style={styles.inputContainer}>
             <Text style={styles.title}>Main Screen</Text>
             <View style={styles.buttonContainer}>
-              <Button
-                title="Pending"
-                onPress={() => navigation.navigate("Pendings")}
-                color={COLORS.primary}
-              />
-              <Button
-                title="Delivered"
-                onPress={() => navigation.navigate("Delivered")}
-                color={COLORS.primary}
-              />
+               <Card style={styles.content}>
+        <ImageSelector />
+      </Card>
             </View>
           </Card>
         </View>
